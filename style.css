@@ -7,7 +7,7 @@
 }
 
 html,
-body,
+body
 main {
     width: 100%;
     height: 100%;
@@ -23,7 +23,7 @@ main {
         display: grid;
         justify-content: center;
         align-content: center;
-        height: 80%;
+      
     }
 
     header {
@@ -52,23 +52,17 @@ main {
         display: flex;
         justify-content: center;
         align-content: center;
-
-
     }
 
     .img-chihiro {
-        height: 300px;
-        width: 300px;
+        height: 250px;
+        width: 250px;
     }
 
     .content-text {
-        display: grid;
-        justify-content: center;
-        align-content: center;
-        padding: 10px;
-        padding-bottom: 40px;
         width: 300px;
-
+        padding: 10px;
+        
     }
 
     h3 {
@@ -91,6 +85,7 @@ main {
         display: grid;
         align-content: center;
         justify-content: start;
+        height: 200px;
 
     }
 
@@ -183,6 +178,7 @@ main {
         grid-row-end: 2;
         margin-bottom: 0;
         width: 500px;
+        
 
     }
 
@@ -192,7 +188,7 @@ main {
 
     .content-text,
     .content-actions {
-        padding-left: 120px;
+        padding-left: 80px;
     }
 
     .content-button-watch-trailer {
@@ -231,6 +227,9 @@ main {
 
     .content-text {
         padding-bottom: 0;
+        display: grid;
+        align-content: center;
+        justify-content: center;
     }
     h3 {
         font-size: 25px;
