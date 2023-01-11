@@ -27,6 +27,7 @@ main {
         justify-content: center;
         align-content: center;
         margin: 50px;
+        height: 50%;
 
     }
 
@@ -36,6 +37,7 @@ main {
         justify-content: space-around;
         align-content: center;
         padding: 10px;
+        margin-bottom: 80px;
     }
 
     .content-social-network ul,
@@ -59,8 +61,8 @@ main {
     }
 
     .img-chihiro {
-        height: 150px;
-        width: 150px;
+        height: 250px;
+        width: 250px;
     }
 
     .content-text {
@@ -129,7 +131,7 @@ main {
 
     header {
         height: 100px;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
     }
 
     .logo {
@@ -148,6 +150,7 @@ main {
     }
 
     .content-body {
+        
         display: grid;
         grid-template-columns: 50% 50%;
         flex-direction: row-reverse;
