@@ -6,7 +6,9 @@
 
 }
 
-html {
+html,
+body,
+main {
     width: 100%;
     height: 100%;
     background: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
@@ -17,8 +19,15 @@ html {
 
 @media screen and (min-width: 320px) {
 
+    .content-body {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        height: 80%;
+    }
+
     header {
-        height: 30px;
+        height: 50px;
         display: flex;
         justify-content: space-around;
         align-content: center;
@@ -29,45 +38,52 @@ html {
     li {
         list-style-type: none;
         display: flex;
-        margin-left: 20px;
-        margin-top: 10px;
+        padding-left: 20px;
+        padding-top: 10px;
 
     }
 
     .social-network {
-        height: 20px;
-        width: 20px;
+        height: 25px;
+        width: 25px;
     }
 
     .content-img-chihiro {
         display: flex;
         justify-content: center;
         align-content: center;
+
+
     }
 
     .img-chihiro {
-        height: 250px;
-        width: 250px;
+        height: 300px;
+        width: 300px;
     }
 
     .content-text {
         display: grid;
         justify-content: center;
         align-content: center;
-        margin: 10px;
-        padding-bottom: 10px;
+        padding: 10px;
+        padding-bottom: 40px;
+        width: 300px;
+
     }
 
     h3 {
-        font-size: 10px;
+        font-size: 20px;
+        padding-bottom: 20px;
     }
 
     h1 {
-        font-size: 15px;
+        font-size: 35px;
+        padding-bottom: 20px;
     }
 
     p {
-        font-size: 9px;
+        font-size: 15px;
+        padding-bottom: 20px;
     }
 
     .content-actions {
@@ -75,7 +91,7 @@ html {
         display: grid;
         align-content: center;
         justify-content: start;
-        padding-left: 20vw;
+
     }
 
 
@@ -159,30 +175,24 @@ html {
         font-size: 20px;
     }
 
+
     .content-text {
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 1;
         grid-row-end: 2;
         margin-bottom: 0;
-        width: 300px;
-        padding-left: 80px;
-        margin: 0;
-    }
-
-    .content-img-chihiro {
-        grid-column-start: 2;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
+        width: 500px;
 
     }
 
     .content-actions {
         display: flex;
-        padding-left: 100px;
+    }
 
-
+    .content-text,
+    .content-actions {
+        padding-left: 120px;
     }
 
     .content-button-watch-trailer {
@@ -209,25 +219,32 @@ html {
 }
 
 @media screen and (min-width:1200px) {
-    .content-text {
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        margin-bottom: 0;
-        width: 500px;
-        padding-left: 120px;
-        margin: 0;
-    }
+   
 
-    .content-actions {
-        display: flex;
-
-        padding-left: 150px;
-    }
-
+   .content-body {
+    height: 65%;
+   }
     .img-chihiro {
-        height: 500px;
-        width: 500px;
+        height: 550px;
+        width: 550px;
+    }
+
+    .content-text {
+        padding-bottom: 0;
+    }
+    h3 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 0;
     }
 }
