@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
+    box-sizing: border-box;
+}
+
+
+
+@media screen and (min-width: 320px) {
+
+    header {
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        padding: 10px;
+    }
+
+    .content-social-network ul,
+    li {
+        list-style-type: none;
+        display: flex;
+        margin-left: 20px;
+        margin-top: 10px;
+
+    }
+
+    .social-network {
+        height: 20px;
+        width: 20px;
+    }
+
+    .content-img-chihiro {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .img-chihiro {
+        height: 250px;
+        width: 250px;
+    }
+
+    .content-text {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        margin: 10px;
+        padding-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 9px;
+    }
+
+    .content-actions {
+        padding-left: 20px;
+        display: grid;
+        align-content: center;
+        justify-content: start;
+        padding-left: 20vw;
+    }
+
+
+
+    .content-button-watch-trailer {
+        display: none;
+    }
+
+
+
+    .button-watch-now {
+        background-color: #658E76;
+        transform: skew(-24deg);
+        height: 50px;
+        width: 180px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon-button,
+    .label-button {
+        transform: skew(24deg);
+
+    }
+
+    .icon-button {
+        margin-right: 10px;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+
+    header {
+        height: 100px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .content-social-network ul,
+    li {
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .social-network {
+        height: 30px;
+        width: 30px;
+    }
+
+    .content-body {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .img-chihiro {
+        height: 400px;
+        width: 400px;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .content-text {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-bottom: 0;
+        width: 300px;
+        padding-left: 80px;
+        margin: 0;
+    }
+
+    .content-img-chihiro {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+    }
+
+    .content-actions {
+        display: flex;
+        padding-left: 100px;
+
+
+    }
+
+    .content-button-watch-trailer {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .button-watch-trailer {
+        background: transparent;
+        border: 3px solid #658E76;
+        transform: skew(-24deg);
+        height: 50px;
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button-watch-now {
+        height: 50px;
+        width: 180px;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    .content-text {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-bottom: 0;
+        width: 500px;
+        padding-left: 120px;
+        margin: 0;
+    }
+
+    .content-actions {
+        display: flex;
+
+        padding-left: 150px;
+    }
+
+    .img-chihiro {
+        height: 500px;
+        width: 500px;
+    }
+}
