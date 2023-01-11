@@ -3,27 +3,31 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-
+    box-sizing: border-box;
 }
 
 html,
-body
+body,
 main {
+    height: 100vh;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
-    box-sizing: border-box;
+    background: linear-gradient(135.02deg, #628E75 0.66%, #1A4855 83.32%);
+
 }
+
+
 
 
 
 @media screen and (min-width: 320px) {
 
+
     .content-body {
         display: grid;
         justify-content: center;
         align-content: center;
-      
+        margin: 50px;
+
     }
 
     header {
@@ -44,8 +48,8 @@ main {
     }
 
     .social-network {
-        height: 25px;
-        width: 25px;
+        height: 20px;
+        width: 20px;
     }
 
     .content-img-chihiro {
@@ -55,29 +59,29 @@ main {
     }
 
     .img-chihiro {
-        height: 250px;
-        width: 250px;
+        height: 150px;
+        width: 150px;
     }
 
     .content-text {
         width: 300px;
         padding: 10px;
-        
+        padding-bottom: 20px;
     }
 
     h3 {
-        font-size: 20px;
-        padding-bottom: 20px;
+        font-size: 15px;
+        padding-bottom: 10px;
     }
 
     h1 {
-        font-size: 35px;
-        padding-bottom: 20px;
+        font-size: 25px;
+        padding-bottom: 10px;
     }
 
     p {
         font-size: 15px;
-        padding-bottom: 20px;
+
     }
 
     .content-actions {
@@ -85,7 +89,7 @@ main {
         display: grid;
         align-content: center;
         justify-content: start;
-        height: 200px;
+
 
     }
 
@@ -100,7 +104,7 @@ main {
     .button-watch-now {
         background-color: #658E76;
         transform: skew(-24deg);
-        height: 50px;
+        height: 40px;
         width: 180px;
         border: none;
         display: flex;
@@ -125,6 +129,7 @@ main {
 
     header {
         height: 100px;
+        margin-bottom: 50px;
     }
 
     .logo {
@@ -148,6 +153,7 @@ main {
         flex-direction: row-reverse;
         justify-content: center;
         align-content: center;
+        margin: 0;
     }
 
     .img-chihiro {
@@ -178,7 +184,7 @@ main {
         grid-row-end: 2;
         margin-bottom: 0;
         width: 500px;
-        
+
 
     }
 
@@ -215,14 +221,18 @@ main {
 }
 
 @media screen and (min-width:1200px) {
-   
+    header {
+        margin-bottom: 10px;
+    }
 
-   .content-body {
-    height: 65%;
-   }
+    .content-body {
+        height: 65%;
+    }
+
+    
     .img-chihiro {
-        height: 550px;
-        width: 550px;
+        height: 500px;
+        width: 500px;
     }
 
     .content-text {
@@ -231,6 +241,7 @@ main {
         align-content: center;
         justify-content: center;
     }
+
     h3 {
         font-size: 25px;
         margin-bottom: 10px;
@@ -245,5 +256,9 @@ main {
     p {
         font-size: 20px;
         margin-bottom: 0;
+    }
+
+    .content-actions {
+        padding-bottom: 20px;
     }
 }
